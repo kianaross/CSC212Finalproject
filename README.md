@@ -27,9 +27,10 @@ Once the code has been compiled, then run the code using the line “./koch #”
 where the # is the order of the fractal you would like to generate.  
 This will create a .txt file called koch.txt.  
 To create the image, we will have to use the l-systemplotter.py.  
-Enter “python3 l-systemplotter.py koch.txt koch.pdf” and the drawing will be stored in the koch.pdf file.
+Enter “python3 l-systemplotter.py koch.txt koch.pdf 60” (60 is the angle degree)
+and the drawing will be stored in the koch.pdf file.
 
-Hilbert Curve (same as snowflake, but hilbert instead of koch)
+Hilbert Curve (same as snowflake, but hilbert instead of koch and degree 90 instead of 60)
 (image/txt file is for order 4)
 
 Our code for the Hilbert Curve is composed of 4 files.  
@@ -40,4 +41,5 @@ Once the code has been compiled, then run the code using the line “./hilbert #
 where the # is the order of the fractal you would like to generate.  
 This will create a .txt file called hilbert.txt.  
 To create the image, we will have to use the l-systemplotter.py.  
-Enter “python3 l-systemplotter.py hilbert.txt hilbert.pdf” and the drawing will be stored in the hilbert.pdf file.
+Enter “python3 l-systemplotter.py hilbert.txt hilbert.pdf 90” (90 is the angle degree) 
+and the drawing will be stored in the hilbert.pdf file.
