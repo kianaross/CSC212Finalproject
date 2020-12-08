@@ -69,7 +69,7 @@ int main(int argc, char *argv[]){
 
 	//writing to an outfile
 	std::ofstream myfile;
-    myfile.open("example.txt");
+    myfile.open("sierpinski.txt");
     if (myfile.is_open())
     {
         for(int index1 = 0; index1 < lines.size(); index1 ++){
