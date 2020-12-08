@@ -32,6 +32,8 @@ std::string koch_snowflake(int order){
     for(int i = 0; i < 4; i++){
         //call snowflake function with order and commands passed in
         snowflake(order, commands);
+        //draw line
+        commands.append("F");
         commands += "+ + ";
     }
     //return the final string
@@ -42,7 +44,6 @@ std::string koch_snowflake(int order){
 void snowflake(int order, std::string &commands){
     //base case (order 0 draws triangle)
     if(order == 0){
-        commands.append("F ");
         return;
     }
     //recursion here
@@ -67,7 +68,5 @@ void snowflake(int order, std::string &commands){
         //add - (left turn)
         commands.append("-");
         snowflake(order-1, commands);
-        //draw line
-        commands.append("F");
     }
 }
