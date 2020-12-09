@@ -13,6 +13,7 @@ This will create a .txt file called sierpinski.txt.
 Then run the python code using the .txt file to generate a pdf with the image of the fractal.  
 To do this enter “python3 python.py sierpinski.txt sierpinski.pdf”.  
 The drawing will be stored in the sierpinski.pdf file. 
+
 Sier-color is run the same way as above, but substitue in sier-color, where you see sierpinski.  Sier-color will aslo print the sierpinski triangle, but with color.  Each order will print the triangles in a different color.
 
 
