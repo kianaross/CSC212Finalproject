@@ -8,7 +8,7 @@
 //- : Turn left by some degree
 //+: Turn right by some degree
 
-//have 3 function
+//have 3 functions in program
 void astring(int order, std::string &commands);
 void bstring(int order, std::string &commands);
 std::string hilbertcurve(int order);
@@ -24,10 +24,10 @@ int main(int argc, char *argv[]){
 
 }
 
-//hilbert curve function.  Will need 2 string
+//hilbert curve function.  Will need 2 strings
 //A->"+BF-AFA-FB"
 //B-> "-AF+BFB+FA-"
-//We will always return a, but will use recursion to substitute in appropriate strings
+//We will always return A, but will use recursion to substitute in appropriate strings
 std::string hilbertcurve(int order){
     //create an empty string to store commands
     std::string commands = "";
@@ -124,6 +124,4 @@ void bstring(int order, std::string &commands){
         //left turn
         commands.append("-");
     }
-
-
 }
