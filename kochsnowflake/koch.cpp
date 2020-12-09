@@ -3,13 +3,13 @@
 #include <fstream>
 #include <cmath>
 
+//L-system rules
 //F : Move forward
-
 //- : Turn left by some degree
-
 //+: Turn right by some degree
 
 //starter code given in lab
+//2 functions in program
 std::string koch_snowflake(int order);
 void snowflake(int order, std::string &commands);
 
@@ -21,7 +21,6 @@ int main(int argc, char *argv[]){
     int order = std::stoi(argv[1]);
     //write to output, result from snowflake function
     of << koch_snowflake(order);
-    /*of << flake(order);*/
 }
 
 //function to draw all sides of snowflake (3 sides)
@@ -46,7 +45,7 @@ void snowflake(int order, std::string &commands){
     if(order == 0){
         return;
     }
-    //recursion here
+    //recursion here  each time called with order-1
     else{
         //recursive call
         snowflake(order - 1, commands);
