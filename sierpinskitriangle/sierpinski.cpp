@@ -4,7 +4,7 @@
 #include <string>
 #include <fstream>
 
-//write the instructions to a text file, pass the text file to the python script and use the line in the lab to run the python script
+//write the instructions to a text file, pass the text file to the python script and run the python script
 
 //draw a triangle using these points
 void drawtriangle(int x1, int y1, int x2, int y2, std::vector<int> &vertexpoints){
@@ -24,6 +24,7 @@ void triangle( int x1, int y1, int x2, int y2, int x3, int y3, std::vector<int> 
     vertexpoints.push_back(0);
 
 	/* Base case. */
+	//If side length of triangle is smaller than 10, stop
 	if(abs(x2-x1) < 10 ){
 	    return;
 	}
@@ -67,15 +68,13 @@ int main(int argc, char *argv[]){
     triangle(x1, y1, x2, y2, x3, y3, vertexpoints, lines);
 
 
-	//writing to an outfile
-	std::ofstream myfile;
+    //writing to an outfile
+    std::ofstream myfile;
     myfile.open("sierpinski.txt");
     if (myfile.is_open())
     {
         for(int index1 = 0; index1 < lines.size(); index1 ++){
             for(int index2 = 0; index2 < lines[0].size(); index2++){
-                //std::cout << lines[index1][index2] << std::endl;
-                //line += std::to_string(lines[index1][index2]) + " ";
                 myfile << lines[index1][index2];
                 myfile << " ";
             }
