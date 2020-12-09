@@ -7,9 +7,8 @@ Sierpinski Triangle
 Our code for the Sierpinski Triangle is composed of 4 files.  
 The necessary files are those titled sierpinski.cpp, sierpinski.txt, sierpinski.pdf, and python.py.  
 To run the code you must first compile sierpinski.cpp program (using the line “g++ sierpinski.cpp –o sierpinski”).  
-You will next run the sierpinski program by entering “./sierpinski x1 y1 x2 y2 x3 y3” , 
-where the the xs and ys are your points (x and y values) for the equilateral triangles 3 vertices.   
-where the # is the order you would like to generate for the fractal.  
+Next you will run the sierpinski program by entering “./sierpinski x1 y1 x2 y2 x3 y3” , 
+where the the xs and ys are your points (x and y values) for the equilateral triangles 3 vertices.    
 This will create a .txt file called sierpinski.txt.  
 Then run the python code using the .txt file to generate a pdf with the image of the fractal.  
 To do this enter “python3 python.py sierpinski.txt sierpinski.pdf”.  
