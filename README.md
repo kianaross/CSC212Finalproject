@@ -17,6 +17,7 @@ The drawing will be stored in the sierpinski.pdf file.
 Sier-color is run the same way as above, but substitute in sier-color where you see sierpinski.  Sier-color will aslo print the sierpinski triangle, but with color.  Each order will print the triangles in a different color.
 
 
+
 Koch Snowflake
 (image/txt file included is for order 4)
 
@@ -30,6 +31,8 @@ This will create a .txt file called koch.txt.
 To create the image, we will have to use the l-systemplotter.py.  
 Enter “python3 l-systemplotter.py koch.txt koch.pdf 60” (60 is the angle degree)
 and the drawing will be stored in the koch.pdf file.
+
+
 
 Hilbert Curve (same as snowflake, but hilbert instead of koch and degree 90 instead of 60)
 (image/txt file is for order 4)
